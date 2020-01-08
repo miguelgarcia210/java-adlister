@@ -18,6 +18,10 @@ public class CounterServlet extends HttpServlet {
         counter++; // increase by 1 for every page view
         System.out.println(counter); // test
 
+        if (request.getParameterMap().containsKey("resetCounter")) {
+            counter = 0;
+        }
+
         out.println("<h1>" + counter + "</h1>");
     }
 }
