@@ -20,8 +20,8 @@ public class OrderFormServlet extends HttpServlet {
                 "<form action=\"/order-summary\" method=\"POST\">\n" +
                         "    Product Name:\n" +
                         "    <input type=\"text\" name=\"product\">\n" +
-                        "    Qunatity:\n" +
-                        "    <input type=\"text\" name=\"number\">\n" +
+                        "    Quantity:\n" +
+                        "    <input type=\"number\" name=\"quantity\">\n" +
                         "    <br>\n" +
                         "    <input type=\"submit\" name=\"submit\">\n" +
                         "</form>\n"
